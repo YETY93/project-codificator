@@ -10,30 +10,51 @@
     
 </head>
 <body>
-    
-    <div class="container">
-    <section>      
-        <div class="logo">
-            <img class="logo-img" src="assets/img/logo-a.svg">
-            <h1 class="title">Encriptador de mensajes</h1>
+        <header class="container">
+            <img class="logo-img" src="assets/img/logo-a.svg" alt="logo-a">
+        </header>
+
+        <main class="principal">
+
+            <section class="seccion1">
+
+                <textarea id="areaPrincipal" class="area" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="contenedorBotones">
+                    <p>Solo minúsculas y sin acentos</p>
+
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+
+                </div>
+            </section>
+
+            <section class="seccion2">
+
+                <div class="contenedor-muneco-ocultar">
+                    <img class="imgDer" src="assets/img/muneco.png">
+                </div>
+
+                <div class="contenerdor-parrafo">
+                    <h3 id="contenedor-h3">Ningun mensaje fue encontrado</h3>
+                </div>   
+
+                <div class="contenedor-resultado">
+                    <textarea id="resultado-final" placeholder="Texto encriptado o desencriptado"></textarea>    
+                </div>
+
+                <div class="contenedor-copiar">
+                    <input type="button" ="btn-copiar" value="Copiar">
+                </div>
+            </section>
+        </main>
+
+
+    </section>  
+
         </div>
 
-        <div class="left">
-            <input class="text-input" id="textoAEncriptar" type="text" placeholder="Ingrese su texto aquí">
         </div>
-    </section>  
-    
-        <div class="right">
-            <img src="assets/img/muneco.png" id="imgDer">
-            <h1 id="textoImg">Ningun mensaje fue encontrado</h1>
-            <textarea id="textoEncriptado" name="texto" cols="8" rows="80"></textarea>
-        </div>
-        <div class="left-buttom">
-              <p>Solo minusculas y sin acentos</p>
-            <button type="button" id="btn-encriptar" onclick="codificarTextoCompleto('textoAEncriptar', 'textoEncriptado')" >Encriptar</button>
-            <button type="button" id="btn-desencriptar" onclick="decodificarTexto('textoEncriptado', 'textoAEncriptar')">Desencriptar</button>
-        </div>
-    </div>
+    </header>
 
     <footer>
         <p>Realizado por Yesid Rangel - Challenge: Encriptador - Programa Oracle, Next Education</p> 
