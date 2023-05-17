@@ -37,7 +37,7 @@ main{
   resize: none;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 24px;
   color: #0A3871;
   background: #E5E5E5;
 }
@@ -46,13 +46,11 @@ p{
   color: #9d9d9d;
   font-size: 15px;
   padding: 1px;
-  margin-left: 17%;
  }
 
 .contenedorBotones{
   width: 85%;
   text-align: center;
-  justify-content: center;
 }
 
 .container {
@@ -72,9 +70,11 @@ p{
   margin-left: 20%;
   color: #0a3871;
 }
-
-.btn-encriptar, .btn-desencriptar, .btn-copiar{
-  color: white;
+/**/
+.btn-encriptar, .btn-desencriptar, .btn-copiar {
+  font-size: 16px; /* Ajusta el tamño de la letra */
+  width: 200px; /* Ajusta el ancho */
+  height: 40px;
   text-align:center;
   text-decoration: none;
   text-shadow: 0px 1px rgba(181, 181, 181, 0.2);
@@ -94,10 +94,11 @@ p{
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; 
 }
-
+/* Tenia un box sahdow de 2px*/
 .btn-encriptar{
+  color: #E5E5E5;
   background: #0B3F80;
-  box-shadow: 0px 2px 0px 0px #062D51;
+  box-shadow: 0px 5px 0px 0px #062D51;
 }
 
 .btn-encriptar:hover{
@@ -118,15 +119,18 @@ p{
   background: #D6D1D0;
 }
 
-.btn-desencriptar:active{
+/* Agregue el efecto clic al boton copiar*/
+.btn-desencriptar:active, .btn-copiar:active{
   box-shadow: 0px 2px 0px 0px #C4BFBF;
 }
 
 .btn-copiar{
   display: block;
   margin-left: 15px;
-  background: #d8dfe8;
-  border-radius: 24px;
+  /*background: #d8dfe8;*/
+  background: #E6E0DE;
+  box-shadow: 0px 5px 0px 0px #C4BFBF;
+  
 }
 
 
@@ -138,7 +142,7 @@ p{
 }*/
 
 .seccion2{
-  width: 25%;
+  width: 25%; /* TODO validar si se puede quitar*/
   border-radius: 20px;
   margin-right: 50px;
   box-sizing: border-box;
@@ -157,23 +161,19 @@ p{
 }
 
 h3{
-  width: 60%;
+  /*width: 60%; Este porcentaje hace que varia el centrado */
   color: #1d67c2;
   font-size: 18px;
   margin-left: 7%;
   margin-right: 5%;
 }
  
-.imgDer {
-  margin-left: 2%;
-  margin-top: 2%;
-  width: 90%;
-}
+
 
 #resultado-final{
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   text-align: center;
-  margin-top: 2%;
   width: 90%;
   height: 90%;
   resize: none;
@@ -183,11 +183,13 @@ h3{
   padding: 10px;
   background-color: white;
 }
-
+/*TODO Quitar los siguientes elemento*/
 .contenedor-copiar{
-  width: 100%;
-  height: 20%;
-  color: #ea7878b7;
+  /*width: 100%;*/
+  /*height: 20%;*/
+  display: flex;
+  justify-content: center;
+  
 }
 
 
@@ -246,15 +248,20 @@ h3{
 
 /*footer*/
 
-.footer {
+/*la clase footer tenia un . (punto .footer) jeje*/
+footer {
+  padding-top: 10px;
+  justify-content: center;
   color: #0a3871;
   text-align: center;
-  margin: 1%;
   color: hwb(240 28% 45%);
+}
+
+footer p{
+  padding-bottom: 10px; /*Agrega una separacion en entre parrafo y los enlaces*/
 }
 
 a {
   color: #9D9D9D;
   text-decoration-line: none;
-  text-align: center;
 }
