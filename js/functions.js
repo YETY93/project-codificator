@@ -55,12 +55,12 @@ const vocalesNumeros = {
    * Codifica un texto completo en clave a través de la combinación
    * de codificación de vocales a números
    * y reemplazo de números por palabras encriptadas.
-   * @param idSelector - El texto a codificar.
+   * @param idEntrada - El texto a codificar.
    * @returns El texto codificado en clave.
    */
-  function codificarTextoCompleto(idSelector, idDestino) {
+  function codificarTextoCompleto(idEntrada, idDestino) {
     // Codificar las vocales a números
-    const textoCodificadoCompleto = codificarTextoNumero(document.getElementById(idSelector).value);
+    const textoCodificadoCompleto = codificarTextoNumero(document.getElementById(idEntrada).value);
     // Reemplazar los números por las palabras encriptadas correspondientes
     document.getElementById(idDestino).value = codificarNumeroClave(textoCodificadoCompleto);
   
@@ -71,7 +71,7 @@ const vocalesNumeros = {
       document.getElementById("imgDer").style.display="none"
       document.getElementById("textoImg").style.display="none"
     }
-    document.getElementById(idSelector).value = "";
+    document.getElementById(idEntrada).value = "";
     // return codificarNumeroClave(textoCodificadoCompleto);
   }
 
@@ -87,7 +87,7 @@ const vocalesNumeros = {
    * @param textoCodificado El texto a decodificar.
    * @returns El texto decodificado.
    */
-  function decodificarTexto(idTextoFinal, idTextiInicial) {
+  function decodificarTexto(idTextoFinal, idTextoDecodificado) {
     // Convertir el texto a minúsculas para facilitar el procesamiento
     const textoCodificado  = document.getElementById(idTextoFinal).value
     let textoMinusculas = textoCodificado.toLowerCase(textoCodificado);
@@ -107,7 +107,7 @@ const vocalesNumeros = {
 
       document.getElementById(idTextoFinal).value = "";
        // Asigna el texto decodificado
-      document.getElementById(idTextiInicial).value = textoDecodificado;
+      document.getElementById(idTextoDecodificado).value = textoDecodificado;
   
     }else{
   
