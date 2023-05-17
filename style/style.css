@@ -195,11 +195,6 @@ h3{
   display: none;
 }
 
-.pie-pagina {
-  text-align: center;
-  font-size: 20px;
-  height: 5%;
-}
 
 
 /*
@@ -256,12 +251,10 @@ h3{
   text-align: center;
   margin: 1%;
   color: hwb(240 28% 45%);
-  transition: 1s;
 }
 
 a {
-  color: #0a3871;
+  color: #9D9D9D;
   text-decoration-line: none;
-  transition: 1s;
-  color: hwb(240 28% 45%);
+  text-align: center;
 }
