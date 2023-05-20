@@ -94,7 +94,7 @@ p{
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; 
 }
-/* Tenia un box sahdow de 2px*/
+/* Tenia un box shadow de 2px*/
 .btn-encriptar{
   color: #E5E5E5;
   background: #0B3F80;
@@ -166,9 +166,7 @@ h3{
   font-size: 18px;
   margin-left: 7%;
   margin-right: 5%;
-}
- 
-
+} 
 
 #resultado-final{
   font-family: "Inter", sans-serif;
@@ -191,7 +189,6 @@ h3{
   justify-content: center;
   
 }
-
 
 .ocultar{
   display: none;
@@ -250,18 +247,17 @@ h3{
 
 /*la clase footer tenia un . (punto .footer) jeje*/
 footer {
+  
   padding-top: 10px;
   justify-content: center;
+  align-self: flex-end;
   color: #0a3871;
   text-align: center;
+  position: fixed;
+  bottom: 0;
   color: hwb(240 28% 45%);
 }
 
 footer p{
   padding-bottom: 10px; /*Agrega una separacion en entre parrafo y los enlaces*/
-}
-
-a {
-  color: #9D9D9D;
-  text-decoration-line: none;
 }

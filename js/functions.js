@@ -69,7 +69,7 @@ const vocalesNumeros = {
       alert('El texto ha sido codificado')
       
       document.getElementById("imgDer").style.display="none"
-      document.getElementById("textoImg").style.display="none"
+      document.getElementById("contenedor-h3").style.display="none"
     }
     document.getElementById(idEntrada).value = "";
     // return codificarNumeroClave(textoCodificadoCompleto);
@@ -103,7 +103,7 @@ const vocalesNumeros = {
       }
 
       document.getElementById("imgDer").style.display="block"
-      document.getElementById("textoImg").style.display="block"
+      document.getElementById("contenedor-h3").style.display="block"
 
       document.getElementById(idTextoFinal).value = "";
        // Asigna el texto decodificado
