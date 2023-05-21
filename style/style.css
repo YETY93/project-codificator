@@ -195,69 +195,20 @@ h3{
 }
 
 
-
-/*
-.left-buttom {
-  font-size: 85%;
-  float: left;
-  width: 70%;
-  height: auto;
-  border-radius: 24px;
-}
-
-.text-input {
-  font-size: 20px;
-  color: #0a3871;
-  float: left;
-  margin-left: 10%;
-  margin-top: 20%;
-  width: 80%;
-  height: 60%;
-  border: none;
-  outline: none;
-  background: #f3f5fc;
-}
-#textoEncriptado {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  font-size: 15px;
-  float: left;
-  margin-left: 10%;
-  color: #313234;
-  width: 80%;
-  height: 20%;
-  border: none;
-  outline: none;
-  font-size: 15px;
-}
-
-
-
-#copiar {
-  margin-left: 33%;
-  margin-top: 90%;
-  padding: 24%;
-  width: 10%;
-  background: #d8dfe8;
-  border-radius: 24px;
-  display: none;
-}*/
-
-/*footer*/
-
-/*la clase footer tenia un . (punto .footer) jeje*/
 footer {
   
   padding-top: 10px;
-  justify-content: center;
-  align-self: flex-end;
   color: #0a3871;
   text-align: center;
-  position: fixed;
   bottom: 0;
   color: hwb(240 28% 45%);
 }
 
 footer p{
   padding-bottom: 10px; /*Agrega una separacion en entre parrafo y los enlaces*/
+  
+}
+footer a{
+  text-decoration: none;
+  color: #9d9d9d;
 }

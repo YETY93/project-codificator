@@ -118,7 +118,14 @@ const vocalesNumeros = {
     return textoDecodificado;
   }
   
-  function imprimir(id) {
-    // let valor = document.getElementById(id).value; 
-    console.log(id);
+  function copiarPortapeles(id) {
+    texto = document.getElementById(id).value
+
+    navigator.clipboard.writeText(texto)
+    .then(() => {
+      alert('Texto copiado al portapapeles')
+    })
+    .catch(err => {
+      alert('Error al copiar al portapapeles:', err)
+    })
   } 
